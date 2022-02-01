@@ -443,4 +443,8 @@
     <None Include="wwwroot\scss\bootstrap\_wells.scss" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\RoomTypeImage\" />
+  </ItemGroup>
+
 </Project>

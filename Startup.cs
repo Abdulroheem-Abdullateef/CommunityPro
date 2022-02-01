@@ -40,6 +40,10 @@ namespace CommunityProApp
             services.AddScoped<IResturantService, ResturantService>();
             services.AddScoped<IOrderRepository, OrderRepository>();
             services.AddScoped<IOrderService, OrderService>();
+            services.AddScoped<IRoomRepository, RoomRepository>();
+            services.AddScoped<IRoomTypeRepository, RoomTypeRepository>();
+            services.AddScoped<IHotelBookingRepository, HotelBookingRepository>();
+            services.AddScoped<IHotelService, HotelService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

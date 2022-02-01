@@ -6,7 +6,7 @@ namespace CommunityProApp.Interfaces.Services
 {
     public interface IHotelService
     {
-        BaseResponse AddRoom(CreateRoomTypeRequestModel model);
+        BaseResponse AddRoomType(CreateRoomTypeRequestModel model);
         BaseResponse AddRoom(CreateRoomRequestModel model);
 
         RoomTypeDto RoomTypeDetail(int id);
@@ -15,6 +15,6 @@ namespace CommunityProApp.Interfaces.Services
 
         IList<RoomTypeDto> GetRoomTypes(int roomTypeId);
 
-        IList<RoomTypeDto> SearchProducts(CheckRoomAvailabilityModel model);
+        SearchRoomDto SearchProducts(CheckRoomAvailabilityModel model);
     }
 }

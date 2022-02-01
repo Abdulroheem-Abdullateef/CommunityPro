@@ -8,7 +8,8 @@ namespace CommunityProApp.Enums
     public enum RoomAvailabilityStatus
     {
         Available,
-        Booked,
-        NotAvailable
+        CheckedIn,
+        NotAvailable,
+        Booked
     }
 }

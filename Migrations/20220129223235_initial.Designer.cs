@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CommunityProApp.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20220129121900_hot")]
-    partial class hot
+    [Migration("20220129223235_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -526,6 +526,9 @@ namespace CommunityProApp.Migrations
                     b.Property<DateTime>("CheckInDate")
                         .HasColumnType("datetime");
 
+                    b.Property<DateTime>("CheckOutDate")
+                        .HasColumnType("datetime");
+
                     b.Property<DateTime>("Created")
                         .HasColumnType("datetime");
 
@@ -533,9 +536,6 @@ namespace CommunityProApp.Migrations
                         .HasColumnType("text");
 
                     b.Property<int>("CustomerId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Duration")
                         .HasColumnType("int");
 
                     b.Property<bool>("IsDeleted")

@@ -1,0 +1,48 @@
+﻿@model CommunityProApp.Dtos.CreateRoomRequestModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Item</h4>
+<hr />
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="CreateRoom" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="RoomNumber" class="control-label"></label>
+                    <input asp-for="RoomNumber" class="form-control" />
+                    <span asp-validation-for="RoomNumber" class="text-danger"></span>
+                </div>
+         
+                <div class="col-md-6" style="margin-top: 20px; font-size: larger; font-weight: bold; color: darkcyan">
+                    <label class="control-label">Room Type </label>
+                    <div>
+                        <select asp-for="RoomTypeId" class="form-control" asp-items="ViewBag.RoomTypes" required>
+                            <option value="">--Select A Room Type--</option>
+                        </select>
+                    </div>
+                  
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-secondary" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+
+
+@section Scripts{
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
