@@ -139,26 +139,30 @@ namespace CommunityProApp.Implementations.Services
         {
             return GetAvailableRoom(model);
         }
-        public BookRoomInvoice BookRoom(CreateBookingRequestModel model)
-        {
-            var days = model.CheckOutDate.Subtract(model.CheckInDate).Days;
-            var booking = new HotelBooking
-            {
-                NumberOfAdults = model.NumberOfAdults,
-                CheckInDate = model.CheckInDate,
-                CheckOutDate = model.CheckOutDate,
-                CustomerId = model.CustomerId,
-                ReferenceNumber = Guid.NewGuid().ToString().Substring(0, 7),
-                RoomId = model.RoomId,
-                RoomPrice = model.RoomPrice * days,
-                Status = Enums.BookingStatus.Initialized,
+        //public BookRoomInvoice BookRoom(CreateBookingRequestModel model)
+        //{
+        //    var days = model.CheckOutDate.Subtract(model.CheckInDate).Days;
+        //    var booking = new HotelBooking
+        //    {
+        //        NumberOfAdults = model.NumberOfAdults,
+        //        CheckInDate = model.CheckInDate,
+        //        CheckOutDate = model.CheckOutDate,
+        //        CustomerId = model.CustomerId,
+        //        ReferenceNumber = Guid.NewGuid().ToString().Substring(0, 7),
+        //        RoomId = model.RoomId,.
 
-            };
-            _hotelBookingRepository.Create(booking);
-            return new BookRoomInvoice
-            {
+        //        RoomPrice = model.RoomPrice * days,
+        //        Status = Enums.BookingStatus.Initialized,
 
-            };
-        }
+        //    };
+        //    _hotelBookingRepository.Create(booking);
+        //    return new BookRoomInvoice
+        //    {
+
+        //    };
+        //}
+
+       
+
     }
 }

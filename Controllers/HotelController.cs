@@ -107,7 +107,6 @@ namespace CommunityProApp.Controllers
         {
             return View();
         }
-        [HttpPost]
-        public IActionResult Booking
+        
     }
 }

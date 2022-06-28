@@ -86,7 +86,7 @@ namespace CommunityProApp.Implementations.Repositories
 
         public T Get(string name)
         {
-            throw new NotImplementedException();
+            return _context.Set<T>().Find(name);    
         }
     }
 }
