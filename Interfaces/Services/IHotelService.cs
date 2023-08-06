@@ -8,13 +8,9 @@ namespace CommunityProApp.Interfaces.Services
     {
         BaseResponse AddRoomType(CreateRoomTypeRequestModel model);
         BaseResponse AddRoom(CreateRoomRequestModel model);
-
         RoomTypeDto RoomTypeDetail(int id);
-
         IList<RoomTypeDto> GetRoomTypes();
-
         IList<RoomTypeDto> GetRoomTypes(int roomTypeId);
-
         SearchRoomDto SearchProducts(CheckRoomAvailabilityModel model);
     }
 }

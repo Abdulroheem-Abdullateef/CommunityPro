@@ -1,14 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
 
 namespace CommunityProApp.Enums
 {
     public enum BookAccessibilityStatus
     {
+        [Description("Free")]
         FREE = 1,
-        NOTFREE
+        [Description("NotFree")]
+        NOTFREE = 2,
+
     }
 }

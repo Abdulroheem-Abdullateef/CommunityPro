@@ -65,6 +65,7 @@ namespace CommunityProApp.Implementations.Services
 
         public IList<RoomTypeDto> GetRoomTypes()
         {
+            
             return _roomTypeRepository.Get().Select(rT => new RoomTypeDto
             {
                 Description = rT.Description,
@@ -80,7 +81,18 @@ namespace CommunityProApp.Implementations.Services
 
         public IList<RoomTypeDto> GetRoomTypes(int roomTypeId)
         {
-            return new List<RoomTypeDto>();
+            var roomType = _roomTypeRepository.Get(r => r.Id == roomTypeId);
+             return _roomTypeRepository.Get().Select(rT => new RoomTypeDto
+            {
+                Description = rT.Description,
+                Id = rT.Id,
+                Image= rT.Image,
+                Image2 = rT.Image2,
+                Image3 = rT.Image3, 
+                MaxNumberOfAdult = rT.MaxNumberOfAdult,
+                Name = rT.Name,
+                Price = rT.Price,
+            }).ToList();
         }
 
         public RoomTypeDto RoomTypeDetail(int id)

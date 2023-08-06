@@ -1,14 +1,11 @@
 ﻿using CommunityProApp.Dtos;
 using CommunityProApp.Entities;
-using CommunityProApp.Implementations.Repositories;
 using CommunityProApp.Interfaces.Repositories;
 using CommunityProApp.Interfaces.Services;
 using CommunityProApp.Models;
-using MassTransit;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace CommunityProApp.Implementations.Services
 {

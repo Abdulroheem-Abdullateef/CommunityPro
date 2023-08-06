@@ -46,13 +46,9 @@ namespace CommunityProApp.Dtos
         public string Name { get; set; }
         public string Description { get; set; }
         public string Image { get; set; }
-
         public string Image2 { get; set; }
-
         public string Image3 { get; set; }
-
         public decimal Price { get; set; }
-
         public int MaxNumberOfAdult { get; set; }
     }
 
@@ -61,13 +57,9 @@ namespace CommunityProApp.Dtos
         public string Name { get; set; }
         public string Description { get; set; }
         public string Image { get; set; }
-
         public string Image2 { get; set; }
-
         public string Image3 { get; set; }
-
         public decimal Price { get; set; }
-
         public int MaxNumberOfAdult { get; set; }
     }
 
@@ -80,7 +72,6 @@ namespace CommunityProApp.Dtos
     public class CheckRoomAvailabilityModel
     {
         public DateTime CheckInDate { get; set; }
-
         public DateTime CheckOutDate { get; set; }
         public int RoomTypeId { get; set; }
         public int NumberOfAdults { get; set; }
@@ -89,21 +80,13 @@ namespace CommunityProApp.Dtos
     {
         public string ReferenceNumber { get; set; }
         public int CustomerId { get; set; }
-
         public Customer Customer { get; set; }
-
         public int RoomId { get; set; }
-
         public Room Room { get; set; }
-
         public decimal RoomPrice { get; set; }
-
         public BookingStatus Status { get; set; }
-
         public DateTime CheckInDate { get; set; }
-
         public DateTime CheckOutDate { get; set; }
-
         public int NumberOfAdults { get; set; }
     }
 }

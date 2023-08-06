@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 
+
 namespace CommunityProApp.Entities
 {
     public class RoomType : BaseEntity

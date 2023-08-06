@@ -1,13 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
 
 namespace CommunityProApp.Enums
 {
     public enum ProductStatus
     {
-        Available,
-        OutOfStock
+        [Description("Available")]
+        Available = 1,
+        [Description("OutOfStock")]
+        OutOfStock = 2,
     }
 }

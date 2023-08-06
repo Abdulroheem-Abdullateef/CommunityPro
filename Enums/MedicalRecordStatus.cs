@@ -1,17 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
 
 namespace CommunityProApp.Enums
 {
     public enum MedicalRecordStatus
     {
-        Initiated,
-        Assigned,
-        Treated,
-        Recieved,
-        Completed
+        [Description("Initiated")]
+        Initiated = 1,
+        [Description("Assigned")]
+        Assigned = 2,
+        [Description("Treated")]
+        Treated = 3,
+        [Description("Recieved")]
+        Recieved = 4,
+        [Description("Completed")]
+        Completed = 5,
 
     }
 }

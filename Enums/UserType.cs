@@ -1,14 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
 
 namespace CommunityProApp.Enums
 {
     public enum UserType
     {
-        Admin,
-        AppUser,
+        [Description("Admin")]
+        Admin = 1,
+        [Description("AppUser")]
+        AppUser = 2,
 
     }
 }

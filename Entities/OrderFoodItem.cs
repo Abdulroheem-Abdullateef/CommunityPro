@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace CommunityProApp.Entities
+﻿namespace CommunityProApp.Entities
 {
     public class OrderFoodItem : BaseEntity
     {

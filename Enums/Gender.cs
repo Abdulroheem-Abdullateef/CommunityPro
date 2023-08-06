@@ -1,13 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
 
 namespace CommunityProApp.Enums
 {
     public enum Gender
     {
+        [Description("Male")]
         Male = 1,
-        Female
+        [Description("Female")]
+        Female = 2,
     }
 }

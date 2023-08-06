@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace CommunityProApp.Entities
+﻿namespace CommunityProApp.Entities
 {
     public class ProductCategory : BaseEntity
     {

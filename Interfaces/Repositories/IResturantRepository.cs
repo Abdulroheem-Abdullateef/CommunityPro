@@ -1,6 +1,5 @@
 ﻿using CommunityProApp.Dtos;
 using CommunityProApp.Entities;
-using System;
 using System.Collections.Generic;
 
 namespace CommunityProApp.Interfaces.Repositories

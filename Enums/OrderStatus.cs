@@ -1,14 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
 
 namespace CommunityProApp.Enums
 {
     public enum OrderStatus
-    {
-        Initialized,
-        Paid,
-        Cancelled
+    {   
+        [Description("Initialized")]
+        Initialized = 1,
+        [Description("Paid")]
+        Paid = 2,
+        [Description("Cancelled")]
+        Cancelled = 3,
     }
 }

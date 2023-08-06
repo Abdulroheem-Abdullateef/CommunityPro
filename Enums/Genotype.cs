@@ -1,16 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
 
 namespace CommunityProApp.Enums
 {
     public enum Genotype
     {
-        AC,
-        AS,
-        SC,
-        SS,
-        AA
+        [Description("AC")]
+        AC = 1,
+        [Description("AS")]
+        AS = 2,
+        [Description("SC")]
+        SC = 3,
+        [Description("SS")]
+        SS = 4,
+        [Description("AA")]
+        AA = 5,
     }
 }
