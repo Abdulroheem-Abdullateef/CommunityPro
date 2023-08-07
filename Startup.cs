@@ -33,8 +33,8 @@ namespace CommunityProApp
                     options.UseMySQL(Configuration.GetConnectionString("ConnectionContext")));
             services.AddControllersWithViews();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
-            services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<ICategoryService, CategoryService>();
+            services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<IResturantRepository, ResturantRepository>();
             services.AddScoped<IResturantService, ResturantService>();
